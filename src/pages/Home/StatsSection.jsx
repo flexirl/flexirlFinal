@@ -9,6 +9,13 @@ import g from "/images/pro1.jpg";
 import h from "/images/proj2.jpg";
 import b from "/images/proj3.jpg";
 
+
+import Dazzling from "../../../src/assets/projectStare/Dazzling.png";
+import makeup from "../../../src/assets/projectStare/makeup.png";
+import mma from "../../../src/assets/projectStare/mma.png";
+import mainak from "../../../src/assets/projectStare/mainak.png";
+import flexirl from "../../../src/assets/projectStare/flexirl.png";
+
 const StatsSection = () => {
   const sectionRef = useRef(null);
   const startedRef = useRef(false);
@@ -20,18 +27,15 @@ const StatsSection = () => {
   const [usersCount, setUsersCount] = useState(0);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const projectImages = useMemo(() => [a, b, d, e, f, g, h], []);
+  const projectImages = useMemo(() => [Dazzling, makeup, mma, mainak, flexirl,], []);
 
   // Project links mapping - Update these URLs with actual project website links
   const projectLinks = useMemo(
     () => [
-      "https://example.com/project1",
-      "https://example.com/project2",
-      "https://example.com/project3",
-      "https://example.com/project4",
-      "https://example.com/project5",
-      "https://example.com/project6",
-      "https://example.com/project7",
+      "https://dazzlingworldacademy.com/",
+      "https://makeupbyanchala.in/",
+      "https://www.mmatrust.com/home",
+      "https://www.flexirl.com/",
     ],
     []
   );
