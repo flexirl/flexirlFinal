@@ -1,5 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import Dazzling from "../../../src/assets/projectStare/Dazzling.png";
+import makeup from "../../../src/assets/projectStare/makeup.png";
+import mma from "../../../src/assets/projectStare/mma.png";
+import mainak from "../../../src/assets/projectStare/mainak.png";
+import flexirl from "../../../src/assets/projectStare/flexirl.png";
 
 /**
  * 3D Rotating Image Carousel
@@ -17,18 +22,19 @@ const Carousel3D = ({
   images: customImages,
   autoPlayInterval = 3000,
   width = 800,
-  height = 500,
+  height = 400,
 }) => {
   // Default placeholder images
   const defaultImages = [
-    "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80",
-    "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80",
-    "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=800&q=80",
-    "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&q=80",
-    "https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80",
-    "https://images.unsplash.com/photo-1578474846511-04ba529f0b88?w=800&q=80",
-    "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80",
-    "https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?w=800&q=80",
+    Dazzling,
+    makeup,
+    mma,
+    mainak,
+    flexirl,
+    makeup,
+    mainak,
+    makeup,
+    makeup,
   ];
 
   const images = customImages || defaultImages;
